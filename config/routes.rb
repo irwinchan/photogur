@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  root 'pictures#index'
   get 'pictures' => 'pictures#index'
   get 'pictures/new' => 'pictures#new'
 
@@ -9,8 +8,8 @@ Rails.application.routes.draw do
   get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
   patch 'pictures/:id' => "pictures#update"
 
-
-
+  delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
+  root 'pictures#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
