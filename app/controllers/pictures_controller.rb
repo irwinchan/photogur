@@ -24,6 +24,20 @@ class PicturesController < ApplicationController
     render :text => "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}"
   end
 
+  def update
+    @picture = Picture.find(params[:id])
+
+    if @picture.update_attributes(picture_params)
+      redirect_to "/pictures/#{@picture.id}"
+    else
+      render :edit
+    end
+  end
+
+  def edit
+    @picture = Picture.find(params[:id])
+  end
+
   private
   def picture_params
     params.require(:picture).permit(:artist, :title, :url)
