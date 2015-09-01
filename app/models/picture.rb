@@ -6,5 +6,6 @@ class Picture < ActiveRecord::Base
       t.string :url
 
       t.timestamps null: false
+    end
   end
 end
