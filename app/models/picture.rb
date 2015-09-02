@@ -4,6 +4,7 @@ class Picture < ActiveRecord::Base
       t.string :artist
       t.string :title
       t.string :url
+      t.text :comment
 
       t.timestamps null: false
     end
