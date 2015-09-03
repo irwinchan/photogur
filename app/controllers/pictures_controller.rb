@@ -5,6 +5,8 @@ class PicturesController < ApplicationController
 
   def show
     @picture = Picture.find(params[:id])
+    @comments = @picture.comments
+    @new_comment = Comment.new
   end
 
   def new
@@ -44,6 +46,6 @@ class PicturesController < ApplicationController
 
   private
   def picture_params
-    params.require(:picture).permit(:artist, :title, :url)
+    params.require(:picture).permit(:artist, :title, :url, :comment, comments_attributes: [:title, :user, :comments, :email])
   end
 end

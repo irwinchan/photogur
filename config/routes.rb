@@ -10,8 +10,9 @@ Rails.application.routes.draw do
 
   #delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
   root 'pictures#index'
-  resources :pictures
-
+  resources :pictures do
+    resources :comments
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

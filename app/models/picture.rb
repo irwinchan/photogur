@@ -1,12 +1,4 @@
 class Picture < ActiveRecord::Base
-  def change
-    create_table :pictures do |t|
-      t.string :artist
-      t.string :title
-      t.string :url
-      t.text :comment
-
-      t.timestamps null: false
-    end
-  end
+ has_many :comments
+ accepts_nested_attributes_for :comments
 end

@@ -23,3 +23,61 @@ Picture.create!(
   :artist => "John Wilhelm",
   :url    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg"
 )
+
+
+Comment.create!(
+  :title  => "Into the Poppies",
+  :user => "John Wilhelm",
+  :comment    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg",
+  :email => "This@email.com",
+  :picture_id => 1
+)
+
+Comment.create!(
+  :title  => "Into the stuff",
+  :user => "asdfasd",
+  :comment    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg",
+  :email => "This@email.com",
+  :picture_id => 1
+)
+
+Comment.create!(
+  :title  => "foofofofooofoo",
+  :user => "John Wilhelm",
+  :comment    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg",
+  :email => "This@email.com",
+  :picture_id => 1
+)
+
+Comment.create!(
+  :title  => "Into the Poppies",
+  :user => "John Wilhelm",
+  :comment    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg",
+  :email => "This@email.com",
+  :picture_id => 2
+)
+
+Comment.create!(
+  :title  => "fasdfffffffPoppies",
+  :user => "John Wilhelm",
+  :comment    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg",
+  :email => "This@email.com",
+  :picture_id => 2
+)
+
+Comment.create!(
+  :title  => "ghfghfghfghfghf",
+  :user => "John Wilhelm",
+  :comment    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg",
+  :email => "This@email.com",
+  :picture_id => 3
+)
+
+Comment.create!(
+  :title  => "Idfasdfasdfasdfass",
+  :user => "John Wilhelm",
+  :comment    => "http://bitmakerlabs.s3.amazonaws.com/photogur/girl.jpg",
+  :email => "This@email.com",
+  :picture_id => 3
+)
+
